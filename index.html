@@ -73,16 +73,17 @@
 .contact-links button:hover{background:#293450;color:white}
 @media(max-width:760px){.next-chapter .next-layout{grid-template-columns:1fr;gap:20px}.next-chapter .next-copy{border-left:0;border-top:1px solid #d8ddec;padding:22px 0 0}.next-chapter .next-subtitle{max-width:none}}
 
-/* Featured personal portrait */
-.hero-main{grid-template-columns:minmax(0,1.22fr) minmax(310px,.78fr);gap:clamp(28px,4vw,72px)}
-.symbol-art.portrait-art{display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:0;position:relative;padding:22px 0}
-.portrait-frame{position:relative;width:min(100%,435px);aspect-ratio:4/5;padding:12px;border:1px solid rgba(204,213,251,.4);border-radius:200px 200px 16px 16px;background:linear-gradient(160deg,rgba(196,217,246,.14),rgba(203,200,241,.09));box-shadow:0 30px 75px rgba(12,18,41,.23)}
-.portrait-frame:before{content:"";position:absolute;inset:-13px 13px 13px -13px;border:1px solid rgba(203,200,241,.23);border-radius:200px 200px 16px 16px;pointer-events:none}
-.portrait-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 24%;border-radius:188px 188px 9px 9px;background:#9fb3c3}
-.portrait-caption{margin-top:23px;font-size:10px;letter-spacing:.18em;color:#d4d9ec;font-weight:700;text-align:center}
+/* Featured portrait — understated, editorial and secondary to the headline */
+.hero-main{grid-template-columns:minmax(0,1fr) 245px;gap:clamp(22px,3vw,48px)}
+.symbol-art.portrait-art{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;min-height:0;position:relative;padding:0;margin-top:-24px;align-self:center}
+.portrait-frame{position:relative;width:220px;max-width:100%;aspect-ratio:4/5;padding:7px;border:1px solid rgba(204,213,251,.4);border-radius:125px 125px 13px 13px;background:linear-gradient(160deg,rgba(196,217,246,.12),rgba(203,200,241,.08));box-shadow:0 16px 38px rgba(12,18,41,.15)}
+.portrait-frame:before{content:"";position:absolute;inset:-9px 9px 9px -9px;border:1px solid rgba(203,200,241,.22);border-radius:125px 125px 13px 13px;pointer-events:none}
+.portrait-frame img{display:block;width:100%;height:100%;object-fit:cover;object-position:center 24%;border-radius:120px 120px 8px 8px;background:#9fb3c3}
+.portrait-caption{margin-top:15px;max-width:245px;font-size:9px;letter-spacing:.12em;color:#d4d9ec;font-weight:700;text-align:center;line-height:1.7}
 .portrait-caption span{color:#a7b3d4}
-@media(max-width:950px){.hero-main{grid-template-columns:minmax(0,1fr) minmax(220px,.65fr)}.portrait-frame{max-width:340px}}
-@media(max-width:760px){.hero-main{grid-template-columns:1fr}.symbol-art.portrait-art{display:flex;margin-top:18px}.portrait-frame{width:min(78vw,330px)}.portrait-caption{font-size:9px}}
+@media(max-width:1100px){.hero-main{grid-template-columns:minmax(0,1fr) 210px;gap:22px}.portrait-frame{width:190px}.portrait-caption{font-size:8px}.hero h1{font-size:clamp(60px,8vw,105px)}}
+@media(max-width:900px){.hero-main{grid-template-columns:1fr;gap:26px}.symbol-art.portrait-art{margin-top:0;align-self:center}.portrait-frame{width:200px}.portrait-caption{font-size:9px}}
+@media(max-width:520px){.portrait-frame{width:175px}.hero-main{gap:20px}}
 </style>
 </head>
 <body>
