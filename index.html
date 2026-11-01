@@ -48,19 +48,26 @@
 .contact h2 em{color:#777eaa}.contact-links a{border-color:#536080}.contact-links a:hover{background:#293450;color:#fff}
 .footer{border-top-color:#a4a9c1}
 
-/* Next chapter — calm, structured, editorial */
-.next-chapter{margin-top:28px;padding:clamp(26px,4vw,52px);background:#f4f5fc;border:1px solid #e1e4f1;border-radius:18px;box-shadow:0 12px 36px rgba(48,61,96,.045)}
-.next-chapter .next-header{display:flex;align-items:center;gap:11px;margin-bottom:22px}
-.next-chapter .next-header:before{content:"";width:30px;height:3px;border-radius:3px;background:linear-gradient(90deg,#91b6e8,#b2a1e5)}
-.next-chapter .mini{font-size:11px;letter-spacing:.14em;font-weight:800;text-transform:uppercase;color:#727b9a}
-.next-chapter .next-layout{display:grid;grid-template-columns:minmax(210px,.8fr) minmax(0,1.5fr);gap:clamp(24px,4vw,64px);align-items:start}
-.next-chapter h3{font:800 clamp(30px,3.1vw,44px)/1.15 var(--display);letter-spacing:-.055em;margin:0;color:#26314e}
-.next-chapter .next-subtitle{font-size:14px;line-height:1.65;color:#727b9a;margin:14px 0 0;max-width:230px}
-.next-chapter .next-copy{border-left:1px solid #d8ddec;padding-left:clamp(22px,3vw,42px)}
-.next-chapter p{font-size:clamp(15px,1.3vw,17px);line-height:1.82;color:#434b64;margin:0 0 16px;max-width:700px}
-.next-chapter p:last-of-type{margin-bottom:0}
-.next-chapter .pathways{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px;padding-top:18px;border-top:1px solid #dfe3f0}
-.next-chapter .pathways span{font-size:12px;font-weight:600;padding:9px 13px;border:1px solid #dce1f0;border-radius:100px;color:#455579;background:#fff}
+/* What's next — full-width editorial feature, separated from the two education cards */
+.next-chapter{width:100%;margin-top:38px;padding:clamp(32px,5vw,76px);background:linear-gradient(115deg,#f0f3fc 0%,#f7f5fc 63%,#f4f1fb 100%);border:1px solid #e0e4f0;border-radius:18px;box-shadow:0 16px 45px rgba(48,61,96,.045)}
+.next-chapter .next-header{display:flex;align-items:center;gap:12px;margin-bottom:34px}
+.next-chapter .next-header:before{content:"";width:35px;height:3px;border-radius:3px;background:linear-gradient(90deg,#91b6e8,#b2a1e5)}
+.next-chapter .mini{font-size:11px;letter-spacing:.15em;font-weight:800;text-transform:uppercase;color:#707b9e}
+.next-chapter .next-layout{display:grid;grid-template-columns:minmax(230px,.72fr) minmax(0,1.5fr);gap:clamp(36px,5vw,95px);align-items:start}
+.next-chapter h3{font:800 clamp(36px,4.4vw,66px)/1.08 var(--display);letter-spacing:-.065em;margin:0;color:#26314e}
+.next-chapter .next-subtitle{font-size:clamp(15px,1.45vw,19px);line-height:1.7;color:#6a7391;margin:24px 0 0;max-width:340px}
+.next-chapter .next-accent{height:4px;width:78px;margin-top:36px;border-radius:5px;background:linear-gradient(90deg,#92b8e9,#baa7e7)}
+.next-chapter .next-copy{border-left:1px solid #d6dced;padding-left:clamp(28px,4vw,66px);min-width:0}
+.next-chapter p{font-size:clamp(15px,1.32vw,17px);line-height:1.85;color:#48536c;margin:0 0 20px;max-width:790px}
+.next-chapter .next-lead{font-size:clamp(19px,2.05vw,27px);font-weight:600;line-height:1.5;letter-spacing:-.025em;color:#283554;margin-bottom:26px}
+.next-chapter .next-opportunities{margin-top:38px;padding-top:27px;border-top:1px solid #dbe0ee}
+.next-chapter .next-opportunities-label{font-size:11px;text-transform:uppercase;letter-spacing:.16em;font-weight:800;color:#717b9f;margin-bottom:20px}
+.next-chapter .opportunity-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px 30px}
+.next-chapter .opportunity-grid>div{min-width:0}
+.next-chapter .opportunity-grid strong{display:block;font-size:13px;letter-spacing:.01em;color:#344a78;margin-bottom:7px}
+.next-chapter .opportunity-grid span{display:block;font-size:14px;line-height:1.65;color:#66718a}
+@media(max-width:850px){.next-chapter .next-layout{grid-template-columns:1fr;gap:30px}.next-chapter .next-copy{border-left:0;border-top:1px solid #d6dced;padding:30px 0 0}.next-chapter .next-subtitle{max-width:600px}}
+@media(max-width:520px){.next-chapter{padding:26px 22px}.next-chapter .opportunity-grid{grid-template-columns:1fr;gap:20px}.next-chapter .next-header{margin-bottom:26px}}
 .contact-email{display:inline-block;font-size:14px;font-weight:600;letter-spacing:0;text-transform:none;text-decoration:underline;text-underline-offset:4px;margin-top:2px}
 .contact-links button{padding:15px 20px;border:1px solid #536080;background:transparent;color:inherit;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
 .contact-links button:hover{background:#293450;color:white}
@@ -85,14 +92,28 @@
 <div class="timeline-item reveal"><div class="period">Jun 2020 — Jan 2022</div><div><h3>Revenue Operations · OneAmerica</h3><div class="role">Indianapolis, IN</div><p>Analyzed and optimized revenue processes, led a 12-month platform migration, coordinated cross-functional implementation, and developed KPI reporting and visualizations to improve decision-making and data integrity.</p></div></div>
 </div></div></section>
 <section class="section education" id="education"><div class="wrap"><div class="section-head reveal"><div class="eyebrow">04 / Education & Recognition</div><div><h2>Always<br><em>learning.</em></h2></div></div><div class="edu-grid"><div class="edu-card reveal"><div class="mini">Education</div><h3>De Anza College</h3><p>A.A. Global Studies for Transfer<br>Projected graduation: Summer 2027</p><div class="tags"><span>Global Studies</span><span>International perspective</span></div></div><div class="edu-card reveal"><div class="mini">Selected certifications & recognition</div><h3>Learning in practice.</h3><ul><li>Tableau Desktop Certified Professional — 2019</li><li>Analyzing and Visualizing Data with Microsoft Power BI — 2019</li><li>Microsoft Office Specialist: Excel Expert — 2015</li><li>Marine Corps Good Conduct Medal</li><li>Letter of Appreciation, Bonnie Fang Foundation — event photography, 2025</li></ul></div>
+</div>
 <div class="next-chapter reveal" id="whats-next" aria-labelledby="next-heading">
   <div class="next-header"><div class="mini">Looking forward / The next chapter</div></div>
   <div class="next-layout">
-    <div><h3 id="next-heading">What's next<br>for me.</h3><p class="next-subtitle">Continuing to learn, contribute, and build toward a bigger purpose.</p></div>
+    <div class="next-intro">
+      <h3 id="next-heading">What's next<br>for me.</h3>
+      <p class="next-subtitle">An education shaped by service, curiosity, and the ambition to make a meaningful impact.</p>
+      <div class="next-accent" aria-hidden="true"></div>
+    </div>
     <div class="next-copy">
-      <p>I'm preparing to transfer to a four-year university, where I intend to study international relations and pursue a co-terminal master's degree.</p>
-      <p>Throughout that journey, I hope to engage deeply in professional and academic opportunities that broaden my perspective and support my long-term goals—especially fellowships, internships, mentorship, and research programs.</p>
-      <div class="pathways" aria-label="Opportunities of interest"><span>Fellowships</span><span>Internships</span><span>Mentorship</span><span>Research programs</span></div>
+      <p class="next-lead">My next chapter is about connecting what I've learned through leadership and building technology with a deeper understanding of the world.</p>
+      <p>I'm preparing to transfer to a four-year university to study international relations, with the intention of completing a co-terminal master's degree. I want my education to extend beyond the classroom—to challenge how I think, introduce me to new perspectives, and help me explore how institutions, communities, and international systems shape people's lives.</p>
+      <p>Throughout this journey, I hope to be fully engaged in both academic and professional work. I'm seeking opportunities to contribute to substantive projects, learn from experienced practitioners and scholars, and develop the research and analytical skills needed to turn ideas into meaningful action.</p>
+      <div class="next-opportunities">
+        <div class="next-opportunities-label">Opportunities I'm pursuing</div>
+        <div class="opportunity-grid">
+          <div><strong>01 / Fellowships</strong><span>Structured experiences that connect public service, leadership, and global issues.</span></div>
+          <div><strong>02 / Internships</strong><span>Hands-on work with organizations addressing complex real-world challenges.</span></div>
+          <div><strong>03 / Mentorship</strong><span>Guidance and exchange with professionals, researchers, and educators.</span></div>
+          <div><strong>04 / Research</strong><span>Academic programs and collaborative projects that deepen inquiry and evidence-based thinking.</span></div>
+        </div>
+      </div>
     </div>
   </div>
 </div></div></section>
