@@ -48,14 +48,23 @@
 .contact h2 em{color:#777eaa}.contact-links a{border-color:#536080}.contact-links a:hover{background:#293450;color:#fff}
 .footer{border-top-color:#a4a9c1}
 
-/* Next chapter: a quieter editorial feature within Education */
-.next-chapter{margin-top:25px;display:grid;grid-template-columns:minmax(210px,.65fr) minmax(0,1.35fr);gap:42px;align-items:start;padding:clamp(28px,4vw,55px);background:linear-gradient(115deg,#e1eafb 0%,#e8e5f7 58%,#f3eaf7 100%);border:1px solid #d8dcef}
-.next-chapter .mini{font-size:11px;letter-spacing:.14em;font-weight:800;text-transform:uppercase;color:#636b91}
-.next-chapter h3{font:800 clamp(34px,4vw,58px)/1.09 var(--display);letter-spacing:-.065em;margin:14px 0 0;color:#26314e}
-.next-chapter p{font-size:clamp(15px,1.55vw,18px);line-height:1.8;color:#434b64;margin:0 0 21px;max-width:760px}
-.next-chapter .pathways{display:flex;flex-wrap:wrap;gap:9px;margin-top:26px}
-.next-chapter .pathways span{font-size:11px;letter-spacing:.05em;font-weight:700;padding:10px 13px;border:1px solid #adb8da;border-radius:30px;color:#35446a;background:#ffffff69}
-@media(max-width:760px){.next-chapter{grid-template-columns:1fr;gap:23px}}
+/* Next chapter — calm, structured, editorial */
+.next-chapter{margin-top:28px;padding:clamp(26px,4vw,52px);background:#f4f5fc;border:1px solid #e1e4f1;border-radius:18px;box-shadow:0 12px 36px rgba(48,61,96,.045)}
+.next-chapter .next-header{display:flex;align-items:center;gap:11px;margin-bottom:22px}
+.next-chapter .next-header:before{content:"";width:30px;height:3px;border-radius:3px;background:linear-gradient(90deg,#91b6e8,#b2a1e5)}
+.next-chapter .mini{font-size:11px;letter-spacing:.14em;font-weight:800;text-transform:uppercase;color:#727b9a}
+.next-chapter .next-layout{display:grid;grid-template-columns:minmax(210px,.8fr) minmax(0,1.5fr);gap:clamp(24px,4vw,64px);align-items:start}
+.next-chapter h3{font:800 clamp(30px,3.1vw,44px)/1.15 var(--display);letter-spacing:-.055em;margin:0;color:#26314e}
+.next-chapter .next-subtitle{font-size:14px;line-height:1.65;color:#727b9a;margin:14px 0 0;max-width:230px}
+.next-chapter .next-copy{border-left:1px solid #d8ddec;padding-left:clamp(22px,3vw,42px)}
+.next-chapter p{font-size:clamp(15px,1.3vw,17px);line-height:1.82;color:#434b64;margin:0 0 16px;max-width:700px}
+.next-chapter p:last-of-type{margin-bottom:0}
+.next-chapter .pathways{display:flex;flex-wrap:wrap;gap:8px;margin-top:26px;padding-top:18px;border-top:1px solid #dfe3f0}
+.next-chapter .pathways span{font-size:12px;font-weight:600;padding:9px 13px;border:1px solid #dce1f0;border-radius:100px;color:#455579;background:#fff}
+.contact-email{display:inline-block;font-size:14px;font-weight:600;letter-spacing:0;text-transform:none;text-decoration:underline;text-underline-offset:4px;margin-top:2px}
+.contact-links button{padding:15px 20px;border:1px solid #536080;background:transparent;color:inherit;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+.contact-links button:hover{background:#293450;color:white}
+@media(max-width:760px){.next-chapter .next-layout{grid-template-columns:1fr;gap:20px}.next-chapter .next-copy{border-left:0;border-top:1px solid #d8ddec;padding:22px 0 0}.next-chapter .next-subtitle{max-width:none}}
 </style>
 </head>
 <body>
@@ -77,12 +86,36 @@
 </div></div></section>
 <section class="section education" id="education"><div class="wrap"><div class="section-head reveal"><div class="eyebrow">04 / Education & Recognition</div><div><h2>Always<br><em>learning.</em></h2></div></div><div class="edu-grid"><div class="edu-card reveal"><div class="mini">Education</div><h3>De Anza College</h3><p>A.A. Global Studies for Transfer<br>Projected graduation: Summer 2027</p><div class="tags"><span>Global Studies</span><span>International perspective</span></div></div><div class="edu-card reveal"><div class="mini">Selected certifications & recognition</div><h3>Learning in practice.</h3><ul><li>Tableau Desktop Certified Professional — 2019</li><li>Analyzing and Visualizing Data with Microsoft Power BI — 2019</li><li>Microsoft Office Specialist: Excel Expert — 2015</li><li>Marine Corps Good Conduct Medal</li><li>Letter of Appreciation, Bonnie Fang Foundation — event photography, 2025</li></ul></div>
 <div class="next-chapter reveal" id="whats-next" aria-labelledby="next-heading">
-  <div><div class="mini">The next chapter / Looking forward</div><h3 id="next-heading">What's next<br>for me.</h3></div>
-  <div><p>I'm preparing to transfer to a four-year university, where I intend to pursue international relations and graduate with a co-terminal master's degree.</p>
-  <p>As I work toward that goal, I want to immerse myself in meaningful professional and academic experiences that deepen my understanding, challenge my perspective, and allow me to contribute along the way. I'm especially interested in fellowships, internships, mentorship opportunities, and research programs that align with my long-term goals.</p>
-  <div class="pathways" aria-label="Areas of interest"><span>Fellowships</span><span>Internships</span><span>Mentorship</span><span>Research programs</span></div></div>
+  <div class="next-header"><div class="mini">Looking forward / The next chapter</div></div>
+  <div class="next-layout">
+    <div><h3 id="next-heading">What's next<br>for me.</h3><p class="next-subtitle">Continuing to learn, contribute, and build toward a bigger purpose.</p></div>
+    <div class="next-copy">
+      <p>I'm preparing to transfer to a four-year university, where I intend to study international relations and pursue a co-terminal master's degree.</p>
+      <p>Throughout that journey, I hope to engage deeply in professional and academic opportunities that broaden my perspective and support my long-term goals—especially fellowships, internships, mentorship, and research programs.</p>
+      <div class="pathways" aria-label="Opportunities of interest"><span>Fellowships</span><span>Internships</span><span>Mentorship</span><span>Research programs</span></div>
+    </div>
+  </div>
 </div></div></section>
 </main>
-<footer class="contact" id="contact"><div class="wrap"><div class="section-head"><div class="eyebrow">05 / Contact</div><div><h2>Let's build<br><em>something good.</em></h2><p>Interested in the intersection of technology, leadership, and meaningful impact? I'd love to connect.</p><div class="contact-links"><a href="mailto:Catherineresoco@gmail.com">Email me ↗</a><a href="https://www.linkedin.com/in/catherine-resoco/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div></div><div class="footer"><span>© <span id="year"></span> Catherine Resoco</span><span>Designed with intention. Built to evolve.</span></div></div></footer>
+<footer class="contact" id="contact"><div class="wrap"><div class="section-head"><div class="eyebrow">05 / Contact</div><div><h2>Let's build<br><em>something good.</em></h2><p>Interested in the intersection of technology, leadership, and meaningful impact? I'd love to connect.</p><a class="contact-email" href="mailto:catherineresoco@gmail.com">catherineresoco@gmail.com</a><div class="contact-links"><a href="mailto:catherineresoco@gmail.com?subject=Hello%20Catherine">Email me ↗</a><button type="button" id="copy-email" aria-label="Copy Catherine’s email address">Copy email</button><a href="https://www.linkedin.com/in/catherine-resoco/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div></div></div><div class="footer"><span>© <span id="year"></span> Catherine Resoco</span><span>Designed with intention. Built to evolve.</span></div></div></footer>
 <script>document.getElementById('year').textContent=new Date().getFullYear();const menu=document.querySelector('.menu'),links=document.querySelector('.nav-links');menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.textContent=open?'×':'☰'});document.querySelectorAll('.nav-links a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false');menu.textContent='☰'}));if('IntersectionObserver'in window){const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll('.reveal').forEach(e=>observer.observe(e))}else document.querySelectorAll('.reveal').forEach(e=>e.classList.add('visible'));</script>
+<script>
+(function(){
+  const button=document.getElementById('copy-email');
+  if(!button)return;
+  button.addEventListener('click',async function(){
+    const email='catherineresoco@gmail.com';
+    try{
+      if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(email)}
+      else {
+        const input=document.createElement('textarea');input.value=email;input.style.position='fixed';input.style.opacity='0';document.body.appendChild(input);input.select();
+        if(!document.execCommand('copy'))throw new Error('Copy unavailable');
+        input.remove();
+      }
+      button.textContent='Copied!';
+      setTimeout(()=>button.textContent='Copy email',2200);
+    }catch(err){button.textContent='Select email above to copy'}
+  });
+})();
+</script>
 </body></html>
